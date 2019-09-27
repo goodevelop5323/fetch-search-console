@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+}
+
+group 'com.goodevelop5323'
+version '1.0.0'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+
+dependencies {
+    compile 'com.google.apis:google-api-services-webmasters:v3-rev35-1.25.0'
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: '*.jar')
+}
